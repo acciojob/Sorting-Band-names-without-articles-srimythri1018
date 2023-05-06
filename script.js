@@ -18,3 +18,5 @@ let ans=updatedList.map((element)=>{
 	return mp[element];
 })
 console.log(ans);
+let tags=[];
+const tag_li=document.getElementByTagName('li').length;
