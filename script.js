@@ -1,5 +1,5 @@
 let arr=['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
-arr.map((element)=>{
+let updatedList=arr.map((element)=>{
 	let words=element.split(" ");
 	let updatedstring=words.reduce((prev, current, index)=> {
 		if(current!= "The" && current!= "an" && current!= "a"){
@@ -10,8 +10,8 @@ arr.map((element)=>{
 	return updatedstring;
 });
 let mp ={};
-updtedList.forEach((element)=>{
-	mp[element]=arr[i];
+updatedList.forEach((element, index)=>{
+	mp[element]=arr[index];
 });
 updatedList.sort();
 let ans=updatedList.map((element)=>{
