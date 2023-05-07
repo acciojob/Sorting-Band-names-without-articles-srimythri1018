@@ -17,6 +17,9 @@ updatedList.sort();
 let ans=updatedList.map((element)=>{
 	return mp[element];
 })
-console.log(ans);
-let tags=[];
-const tag_li=document.getElementByTagName('li').length;
+let list = document.getElementById('band');
+    for (let i = 0; i < ans.length; i++) {
+      let item = document.createElement('li');
+      item.appendChild(document.createTextNode(ans[i]));
+      list.appendChild(item);
+    }
